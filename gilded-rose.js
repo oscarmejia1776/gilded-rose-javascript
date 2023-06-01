@@ -6,6 +6,37 @@ export class Item {
   }
 }
 
+//Classes
+class Basic extends Item {
+  constructor(name, sellIn, quality) {
+    super(name, sellIn, quality);
+  }
+}
+
+class Ripens extends Item {
+  constructor(name, sellIn, quality) {
+    super(name, sellIn, quality);
+  }
+}
+
+class Conjured extends Item {
+  constructor(name, sellIn, quality) {
+    super(name, sellIn, quality);
+  }
+}
+
+class Legendary extends Item {
+  constructor(name, sellIn, quality) {
+    super(name, sellIn, quality);
+  }
+}
+
+class Ticket extends Item {
+  constructor(name, sellIn, quality) {
+    super(name, sellIn, quality);
+  }
+}
+
 export let items = [];
 
 items.push(new Item("+5 Dexterity Vest", 10, 20));
@@ -15,6 +46,9 @@ items.push(new Item("Sulfuras, Hand of Ragnaros", 0, 80));
 items.push(new Item("Backstage passes to a TAFKAL80ETC concert", 15, 20));
 items.push(new Item("Conjured Mana Cake", 3, 6));
 
+//Refatcoring - Restructure the code without changing its behavior
+//Testing - Manual, automated testing
+//Unit, integration, acceptance
 export const updateQuality = () => {
   for (let item of items) {
     if (
